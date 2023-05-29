@@ -2,7 +2,7 @@ const express = require('express');
 const connectDB = require('./config/db');
 const app = express();
 
-// Connect Database
+//Connect Database
 connectDB();
 const routes = require('./routes/routes');
 app.use(express.json());
