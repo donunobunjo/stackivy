@@ -7,7 +7,7 @@ const sendNotification = async (userName, notificationType, message) => {
       if (notificationType === 'email') {
         sendEmailNotification(user.email, message);
       } else if (notificationType === 'mobile') {
-        sendMobileNotification(user.mobileNumber, message);
+        sendMobileNotification(user.mobile, message);
       }
     }
   };
