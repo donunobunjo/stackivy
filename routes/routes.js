@@ -17,7 +17,7 @@ router.post('/register', async (req, res) => {
     email: Joi.string().email().required(),
     mobile: Joi.string().required(),
     userName: Joi.string().alphanum().min(3).max(20).required(),
-    balance: Joi.number().positive().required()
+    balance: Joi.number().required()
   });
   const { error, value } = userValidationSchema.validate(req.body);
   if (error) {
@@ -41,7 +41,7 @@ router.post('/register', async (req, res) => {
 router.post('/deposit', async (req, res) => {
   const depositValidationSchema = Joi.object({
     userName: Joi.string().alphanum().min(3).max(20).required(),
-    amount: Joi.number().positive().required(),
+    amount: Joi.number().required(),
     notificationType: Joi.string().valid('email', 'mobile').required()
   });
   const { error, value } = depositValidationSchema.validate(req.body);
