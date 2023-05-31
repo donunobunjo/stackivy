@@ -13,12 +13,12 @@ const sendNotification = async (userName, notificationType, message) => {
   };
   
   const sendEmailNotification = (email, message) => {
-    // Implement the logic to send an email notification
+    // I will implement the logic to send an email notification
     //Requires a third party API here
   };
   
   const sendMobileNotification = (mobileNumber, message) => {
-    // Implement the logic to send a mobile notification
+    // I will implement the logic to send a mobile notification
     //Requires a third party API here
   };
   
