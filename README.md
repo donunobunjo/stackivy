@@ -3,6 +3,7 @@
 ##  setup
 ```
 git clone https://github.com/donunobunjo/stackivy.git
+cd stackivy
 npm install
 npm run start
 ```
