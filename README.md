@@ -22,3 +22,11 @@ MongoDB Atlas
 
 ### http://localhost:3000/register
 ####   Method: Post
+####   Content type: Content-Type: application/json
+####   Body: {"userName": "joe", "email":"joe@gmail.com", "balance": 150, "mobile": "0806691940" }
+
+
+### http://localhost:3000/deposit
+####   Method: Post
+####   Content type: Content-Type: application/json
+####   Body: {"userName": "joe", "amount": 150, "notificationType": "mobile" }
